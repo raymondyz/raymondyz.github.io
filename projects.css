@@ -1,0 +1,41 @@
+main {
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+}
+
+#title-group {
+  text-align: center;
+}
+
+#projects-container {
+  /* background-color: green; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  gap: 20px;
+}
+
+.project-section {
+  /* background-color: red; */
+
+  padding: 20px 50px;
+  border-radius: 20px;
+}
+
+#back-button {
+  opacity: 0.8;
+  height: 60px;
+  padding: 0 35px;
+
+  align-self: center;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+}
