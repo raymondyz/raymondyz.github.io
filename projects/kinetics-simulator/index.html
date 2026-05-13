@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinetics Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="../../projects.html">Back</a>
+    <div class="main-container">
+      <canvas id="myCanvas" width="800" height="800"></canvas>
+      <div class="controls-container">
+        <div class="slidecontainer">
+          <h3>Temperature</h3>
+          <input
+            class="slider"
+            id="temp-slider"
+            type="range"
+            min="0.2"
+            max="20"
+            value="10"
+            step="0.2"
+          />
+          <h3>Concentration of A</h3>
+          <input
+            class="slider"
+            id="amount-slider-A"
+            type="range"
+            min="0"
+            max="200"
+            value="10"
+            step="0.1"
+          />
+          <h3>Concentration of B</h3>
+          <input
+            class="slider"
+            id="amount-slider-B"
+            type="range"
+            min="0"
+            max="200"
+            value="10"
+            step="0.1"
+          />
+        </div>
+        <div>
+          <button class="button" id="pause-button">Unpause</button>
+          <button class="button" id="clear-graph-button">Clear Graph</button>
+        </div>
+        <div>
+          <canvas id="concentration-chart"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
